@@ -17,3 +17,8 @@
 
 # Temporarily block newer stable Python versions until profiles are updated.
 >=dev-lang/python-3.5
+
+# Block Linux 4.16 to test 4.14.
+>=sys-kernel/coreos-kernel-4.15
+>=sys-kernel/coreos-modules-4.15
+>=sys-kernel/coreos-sources-4.15
