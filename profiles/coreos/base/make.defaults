@@ -41,7 +41,7 @@ USE="${USE} -bindist"
 # Default licenses that are accepted for ChromiumOS builds.
 # If you want to accept more, use the --accept_licenses flag
 # when running setup_board.
-ACCEPT_LICENSE="* -@EULA -@CHROMEOS"
+ACCEPT_LICENSE="* NVIDIA-CORPORATION -@EULA -@CHROMEOS"
 
 # Favor our own mirrors over Gentoo's
 GENTOO_MIRRORS="
