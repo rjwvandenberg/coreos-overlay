@@ -10,12 +10,13 @@ KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND="
-	app-emulation/docker
-	x11-drivers/nvidia-drivers
 	app-emulation/nvidia-container-runtime
 	app-emulation/nvidia-container-runtime-hook
 "
-RDEPEND="${DEPEND}"
+RDEPEND="
+	${DEPEND}
+	x11-drivers/nvidia-drivers
+"
 
 src_configure() {
 	return

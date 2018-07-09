@@ -5,6 +5,11 @@
 
 # nvidia docker for cuda applications
 app-emulation/nvidia-docker 
+# requisites
+app-emulation/nvidia-container-runtime
+app-emulation/nvidia-container-runtime-hook
+app-emulation/libnvidia-container
+app-emulation/libnvidia-container-tools
 
 =dev-util/shflags-1.0.3 ~amd64
 =dev-util/perf-4.9.13 ~amd64
