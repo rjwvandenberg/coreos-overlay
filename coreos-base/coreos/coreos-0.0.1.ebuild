@@ -85,6 +85,8 @@ RDEPEND="${RDEPEND}
 	)"
 
 RDEPEND="${RDEPEND}
+	app-emulation/nvidia-docker
+
 	app-admin/etcd-wrapper
 	app-admin/flannel-wrapper
 	app-admin/kubelet-wrapper
