@@ -27,7 +27,8 @@ KEYWORDS="-* amd64 ~amd64-fbsd"
 RESTRICT="-bindist mirror"
 EMULTILIB_PKG="true"
 
-IUSE="acpi compat +driver gtk3 kernel_FreeBSD kernel_linux +kms multilib pax_kernel static-libs -tools uvm wayland +X"
+IUSE="acpi compat +driver gtk3 kernel_FreeBSD +kernel_linux +kms multilib pax_kernel 
+static-libs tools +uvm wayland +X"
 REQUIRED_USE="
 	tools? ( X )
 	static-libs? ( tools )
@@ -454,7 +455,7 @@ src_install-libs() {
 		nv_libdir="${NV_OBJ}"/32
 	fi
 
-	if use X; then
+#	if use X; then
 		NV_GLX_LIBRARIES=(
 			"libEGL.so.$(usex compat ${NV_SOVER} 1.1.0) ${GL_ROOT}"
 			"libEGL_nvidia.so.${NV_SOVER} ${GL_ROOT}"
@@ -514,7 +515,7 @@ src_install-libs() {
 		for NV_LIB in "${NV_GLX_LIBRARIES[@]}"; do
 			donvidia "${nv_libdir}"/${NV_LIB}
 		done
-	fi
+#	fi
 }
 
 pkg_preinst() {
