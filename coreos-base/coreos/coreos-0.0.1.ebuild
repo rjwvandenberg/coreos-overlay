@@ -84,15 +84,27 @@ RDEPEND="${RDEPEND}
 		sys-auth/sssd
 	)"
 
+# removed from dependencies 
+#	app-admin/etcd-wrapper
+#	app-admin/flannel-wrapper
+#	app-admin/kubelet-wrapper
+#	app-admin/locksmith
+#	app-admin/mayday
+#	app-admin/toolbox
+#	app-emulation/rkt
+#replaced by oci format app-emulation/actool
+#superseded by ignition	coreos-base/coreos-cloudinit
+#cloud-provider specifics	coreos-base/coreos-metadata
+#	coreos-base/update_engine
+#	dev-db/etcdctl
+#	dev-util/strace
+#	net-analyzer/nmap
+#	net-analyzer/tcpdump
+#	net-dns/bind-tools
+
 RDEPEND="${RDEPEND}
-	app-admin/etcd-wrapper
-	app-admin/flannel-wrapper
-	app-admin/kubelet-wrapper
-	app-admin/locksmith
-	app-admin/mayday
 	app-admin/sdnotify-proxy
 	app-admin/sudo
-	app-admin/toolbox
 	app-arch/gzip
 	app-arch/tar
 	app-arch/torcx
@@ -101,22 +113,12 @@ RDEPEND="${RDEPEND}
 	app-crypt/gnupg
 	app-crypt/tpmpolicy
 	app-editors/vim
-	app-emulation/rkt
-	app-emulation/actool
 	app-misc/ca-certificates
 	app-misc/jq
 	app-shells/bash
-	coreos-base/coreos-cloudinit
 	coreos-base/coreos-init
-	coreos-base/coreos-metadata
 	coreos-base/update-ssh-keys
-	coreos-base/update_engine
-	dev-db/etcdctl
-	dev-util/strace
 	dev-vcs/git
-	net-analyzer/nmap
-	net-analyzer/tcpdump
-	net-dns/bind-tools
 	net-firewall/ebtables
 	net-firewall/ipset
 	net-firewall/iptables
